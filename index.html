@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@1,800&display=swap" rel="stylesheet">
+   
+<title>SCD-RDO</title>
+</head>
+<body>
+    <div class="nav" id="nv">
+    
+        <a href="https://idaidaida.net/" target="_blank"><h1 class="bi">RDiO</h1></a>
+        <a href="#shows" class="shs">shows</a>
+        <a href="#epss" class="eps">episodes</a>
+
+        <div class="menu">
+            <button class="mnu-btn">
+                <div class="mnu-opn"></div>
+            </button>
+        </div>
+        <a href="" class="shp">shop</a> 
+        <a href="" class="au">about us</a>
+        <a href="" class="dte">donate</a>
+    </div>
+    <div class="nav-lv">
+        <div class="l">
+           <h2>d a t e</h2>
+           <h3>live show</h3>
+        </div>
+        <div class="r">
+            <h2>d a t e</h2>
+           <h3>live show</h2>
+        </div>
+    </div>
+    
+     <div class="live-s">
+            <div class="lft">
+                <div class="lft-bg"></div>
+               <h1 class="logo">RDiO</h1>
+               <h1 class="logo2">RDiO</h1>
+               <h1 class="logo3">RDiO</h1>
+            </div>
+            <div class="rht">
+               <div class="shw-img"></div>
+                <h1 class="logo-rt">RDiO</h1>
+            </div>
+    </div>
+
+
+    <section>
+        <div class="sec-ttle" id="shows">SHOWS</div>
+        <div class="shws">
+            <div class="ss-c"></div>
+            <div class="ss-c"></div>
+            <div class="ss-c"></div>
+        </div>
+        <div class="sec-ttle">EPISODES</div>
+        <div class="epss" id="epss">
+            <div class="ep-lnk"></div>
+            <div class="ep-lnk"></div>
+            <div class="ep-lnk"></div>
+            <div class="ep-lnk"></div>
+        </div>
+    </section>
+
+    <script>
+        var logos = document.getElementsByClassName("logo");
+        document.onmousemove = function ()
+        {
+            var x = event.clientX * 65  / window.innerWidth + "50%";
+            var y = event.clientY * 110 / window.innerHeight + "%";
+            
+            for(var i=0;i<2;i++) {
+            logos[i].style.left = x;
+            logos[i].style.top = y;
+            logos[i].style.transform = "translate(-"+x+", -"+y+")";
+            }
+        }
+        var logos2 = document.getElementByClassName("logo2")
+        document.onmousemove = function ()
+        {
+            var x = event.clientX * 45  / window.innerWidth + "50%";
+            var y = event.clientY * 90 / window.innerHeight + "%";
+            
+            for(var i=0;i<2;i++) {
+            logos2[i].style.left = x;
+            logos2[i].style.top = y;
+            logos2[i].style.transform = "translate(-"+x+", -"+y+")";
+            }
+        }
+        var logos3 = document.getElementByClassName("logo3")
+        document.onmousemove = function ()
+        {
+            var x = event.clientX * 25  / window.innerWidth + "50%";
+            var y = event.clientY * 70 / window.innerHeight + "%";
+            
+            for(var i=0;i<2;i++) {
+            logos3[i].style.left = x;
+            logos3[i].style.top = y;
+            logos3[i].style.transform = "translate(-"+x+", -"+y+")";
+            }
+        }
+    </script>
+</body>
+</html>
