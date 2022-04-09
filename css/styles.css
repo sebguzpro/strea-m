@@ -420,4 +420,18 @@ section{
         display: none;
     }
     
+      .rht-actv-img{
+        background-image: url(../img/img-show-lve.jpeg);
+        background-size: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: rgba(127, 255, 212, 0.091);
+        width: 100%;
+        height: 60%;
+        margin-top: 0em;
+        margin-left:  0%;
+        margin-bottom: -6%;
+        z-index: -3;
+    }
+    
 }
