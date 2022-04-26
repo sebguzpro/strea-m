@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@1,800&display=swap" rel="stylesheet">
+        
+</script>
 
 <title>SCD-RDO</title>
 </head>
@@ -20,8 +22,15 @@
 
         <div class="menu">
             <button class="mnu-btn">+</button>
-                <div class="mnu-opn"></div>
-            
+                <div class="mnu-opn">
+                    <ul>
+                        <a href=""></a>
+                        <a href=""></a>
+                        <a href=""></a>
+                        <a href=""></a>
+                        <a href=""></a>
+                    </ul>
+                </div>
         </div>
         <a href="" class="shp">shop</a> 
         <a href="" class="au">about us</a>
@@ -31,10 +40,17 @@
         <div class="l">
            <h2>d a t e</h2>
            <h3>live show</h3>
+           <a href="#shows" class="l-lv">jazz</a>
+           <a href=""><di class="play-l"></di></a>
+
         </div>
         <div class="r">
             <h2>d a t e</h2>
            <h3>live show</h2>
+            <a href="#shows" class="r-lv">house</a>
+            <a href="" class="p-r">
+                <div class="play-r"></div>
+                </a>
         </div>
     </div>
     
@@ -77,21 +93,9 @@
         </div>
     </section>
 
-    <script>
-        var logos = document.getElementsByClassName("logo");
-        document.onmousemove = function ()
-        {
-            var x = event.clientX * 180  / window.innerWidth + "50%";
-            var y = event.clientY * 75 / window.innerHeight + "%";
-            
-            for(var i=0;i<2;i++) {
-            logos[i].style.left = x;
-            logos[i].style.top = y;
-            logos[i].style.transform = "translate(-"+x+", -"+y+")";}
 
-        }
-        
-    </script>
-
+<script src="scripts/main.js">
+  
+</script>
 </body>
 </html>
